@@ -1044,8 +1044,8 @@ sub derive_with_div {
     elsif(0 < $orig_val) {
         #$rand_min = ($min / $orig_val)->bceil();
         #$rand_max = ($max / $orig_val)->bfloor();
-        $rand_min = (Math::BigFloat->new($max) / Math::BigFloat->new($orig_val))->bceil();
-        $rand_max = (Math::BigFloat->new($min) / Math::BigFloat->new($orig_val))->bfloor();
+        $rand_min = (Math::BigFloat->new($min) / Math::BigFloat->new($orig_val))->bceil();
+        $rand_max = (Math::BigFloat->new($max) / Math::BigFloat->new($orig_val))->bfloor();
     }
     else {
         Carp::croak "Invalid value: $orig_val";
