@@ -3,7 +3,7 @@
 debug_mode => 0,
 
   # Multiplication of number of operators  and expressionis
-  e_size_num => 1000,
+  e_size_num => 100,
 
   # main以外の関数を生成するかどうか
   func_generate_flag => 1,
@@ -74,7 +74,7 @@ debug_mode => 0,
   macro_ng => 'printf("@NG@ (test = " fmt ")\n",val)',
 
   # Command of the compiler with option
-  compile_commands => ["gcc-4.8 -O3"],
+  compile_commands => ["gcc-13 -O3"],
 
   # Operators, separated by spaces
   operators => [
